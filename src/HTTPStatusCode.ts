@@ -56,3 +56,9 @@ namespace HTTPStatusCode {
     export const NOT_EXTENDED: number = 510;
     export const NETWORK_AUTHENTICATION_REQUIRED: number = 511;
 }
+
+(function(g: any) {
+    if (!g.HTTPStatusCode) {
+        g.HTTPStatusCode = HTTPStatusCode;
+    }
+})(global);
