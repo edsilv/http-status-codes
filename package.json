@@ -1,6 +1,6 @@
 {
   "name": "http-status-codes",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "dist/http-status-codes.js",
   "scripts": {},
   "types": "./dist/http-status-codes.d.ts",
