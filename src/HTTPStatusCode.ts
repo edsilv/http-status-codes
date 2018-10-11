@@ -61,4 +61,4 @@ namespace HTTPStatusCode {
     if (!g.HTTPStatusCode) {
         g.HTTPStatusCode = HTTPStatusCode;
     }
-})(global);
+})(window);
