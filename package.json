@@ -1,6 +1,6 @@
 {
   "name": "@edsilv/http-status-codes",
-  "version": "0.0.12",
+  "version": "1.0.0",
   "main": "./dist-esmodule/index.js",
   "types": "./types/index.d.ts",
   "scripts": {
