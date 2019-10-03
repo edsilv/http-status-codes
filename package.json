@@ -1,6 +1,6 @@
 {
   "name": "@edsilv/http-status-codes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "./dist-umd/httpstatuscodes.js",
   "module": "./dist-esmodule/index.js",
   "types": "./types/index.d.ts",
@@ -10,8 +10,8 @@
     "build:esmodule": "tsc -m es6 --outDir dist-esmodule",
     "build:umd": "webpack",
     "build:var": "cross-env NODE_WEBPACK_LIBRARY_PATH=dist-var NODE_WEBPACK_LIBRARY_TARGET=var webpack",
-    "build:types": "npx dts-bundle-generator --umd-module-name keycodes -o types/index.d.ts dist-esmodule/index.d.ts",
-    "build:docs": "rimraf -rf docs && typedoc --out docs --name keycodes --theme default --ignoreCompilerErrors --experimentalDecorators --emitDecoratorMetadata --target ES6 --moduleResolution node --preserveConstEnums --stripInternal --suppressExcessPropertyErrors --suppressImplicitAnyIndexErrors --module commonjs src/ && touch docs/.nojekyll",
+    "build:types": "npx dts-bundle-generator --umd-module-name httpstatuscodes -o types/index.d.ts dist-esmodule/index.d.ts",
+    "build:docs": "rimraf -rf docs && typedoc --out docs --name httpstatuscodes --theme default --ignoreCompilerErrors --experimentalDecorators --emitDecoratorMetadata --target ES6 --moduleResolution node --preserveConstEnums --stripInternal --suppressExcessPropertyErrors --suppressImplicitAnyIndexErrors --module commonjs src/ && touch docs/.nojekyll",
     "build": "npm run clean && npm run build:commonjs && npm run build:esmodule && npm run build:umd && npm run build:var && npm run build:types",
     "prepare": "npm run build"
   },
