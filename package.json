@@ -1,8 +1,9 @@
 {
   "name": "@edsilv/http-status-codes",
-  "version": "1.0.2",
-  "main": "./dist-umd/httpstatuscodes.js",
+  "version": "1.0.3",
+  "main": "./dist-commonjs/index.js",
   "module": "./dist-esmodule/index.js",
+  "browser": "./dist-umd/httpstatuscodes.js",
   "types": "./types/index.d.ts",
   "scripts": {
     "clean": "rimraf -rf dist-umd dist-commonjs dist-esmodule dist-var types",
